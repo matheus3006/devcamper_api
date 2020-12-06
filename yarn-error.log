@@ -1,0 +1,43 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe D:\Program Files (x86)\Yarn\bin\yarn.js add express detenv
+
+PATH: 
+  D:\Git\mingw64\bin;D:\Git\usr\bin;C:\Users\mathe\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;D:\Git\cmd;D:\Git\mingw64\bin;D:\Git\usr\bin;D:\Program Files (x86)\Yarn\bin;C:\Program Files\nodejs;C:\Users\mathe\AppData\Local\Microsoft\WindowsApps;D:\Microsoft VS Code\bin;C:\Users\mathe\AppData\Local\Yarn\bin;C:\Users\mathe\AppData\Roaming\npm
+
+Yarn version: 
+  1.22.5
+
+Node version: 
+  14.15.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/detenv: Not found
+      at Request.params.callback [as _callback] (D:\Program Files (x86)\Yarn\lib\cli.js:66097:18)
+      at Request.self.callback (D:\Program Files (x86)\Yarn\lib\cli.js:140749:22)
+      at Request.emit (events.js:315:20)
+      at Request.<anonymous> (D:\Program Files (x86)\Yarn\lib\cli.js:141721:10)
+      at Request.emit (events.js:315:20)
+      at IncomingMessage.<anonymous> (D:\Program Files (x86)\Yarn\lib\cli.js:141643:12)
+      at Object.onceWrapper (events.js:421:28)
+      at IncomingMessage.emit (events.js:327:22)
+      at endReadableNT (_stream_readable.js:1327:12)
+      at processTicksAndRejections (internal/process/task_queues.js:80:21)
+
+npm manifest: 
+  {
+    "name": "devcamper_api",
+    "version": "1",
+    "main": "server.js",
+    "repository": "https://github.com/matheus3006/devcamper_api.git",
+    "author": "matheus3006 <matheussouza18@live.com>",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

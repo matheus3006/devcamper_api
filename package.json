@@ -1,0 +1,19 @@
+{
+  "name": "devcamper_api",
+  "version": "1",
+  "main": "server.js",
+  "scripts": {
+    "start": "SET NODE_ENV=production & node server",
+    "dev": "nodemon server"
+  },
+  "repository": "https://github.com/matheus3006/devcamper_api.git",
+  "author": "matheus3006 <matheussouza18@live.com>",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
