@@ -98,7 +98,7 @@ const BootcampSchema = new mongoose.Schema({
         type: Date,
         default: Date.now
       },
-     
+    
 
 });
 
@@ -126,8 +126,6 @@ BootcampSchema.pre('save', async function(next) {
   this.address = undefined;
   next();
 });
-
-
 
 
 module.exports = mongoose.model('Bootcamp', BootcampSchema);
