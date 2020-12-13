@@ -18,18 +18,20 @@ connectDB();
 
 // Route files
 const bootcamps = require('./routes/bootcamps')
+const courses = require('./routes/courses')
 
 const app=express();
 // Body Parser
 app.use(express.json());
 
-// Dev loggin middleware
+// Dev logIn middleware
 if(process.env.NODE_ENV === 'development'){
     app.use(morgan('dev'));
 }
 
 // Mount routers
-const server = app.use('/api/v1/bootcamps', bootcamps);
+app.use('/api/v1/bootcamps', bootcamps);
+app.use('/api/v1/courses', courses);
 
 //Must Be bellow our Mount routers
 app.use(errorHandler);
@@ -44,4 +46,4 @@ process.on('unhandledRejection', (err,promise)=>{
     console.log(`Error: ${err.message}`.red.bold);
     //Close  server & exit process
     server.close(()=> process.exit(1));
-})
+});
