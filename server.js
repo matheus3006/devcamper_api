@@ -25,8 +25,10 @@ const courses = require('./routes/courses')
 const auth = require('./routes/auth')
 
 const app=express();
+
 // Body Parser
 app.use(express.json());
+
 
 //cookie parser
 app.use(cookieParser());
@@ -50,7 +52,7 @@ app.use('/api/v1/auth', auth);
 //Must Be bellow our Mount routers
 app.use(errorHandler);
 
-const PORT = process.env.PORT || 5000
+const PORT = process.env.PORT || 4000
 
 
 app.listen(PORT, console.log(`Server running in ${process.env.NODE_ENV} mode on port ${PORT}`.yellow.bold));
